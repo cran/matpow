@@ -1,0 +1,11 @@
+
+Quick start, trivial example:
+
+m <- rbind(1:2,3:4)
+g <- matpow(m,2)
+g$prod1
+
+
+See the examples in the online help for more examples, and also the
+slides BARUGmatpow.pdf included in this package.
+

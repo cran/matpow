@@ -1,0 +1,4 @@
+
+export(matpow,dup.vanilla,dup.bigmemory,genmulcmd.vanilla,genmulcmd.bigmemory,
+   genmulcmd.gputools,normvec,cgraph,eig,mc,mexp)
+ 
