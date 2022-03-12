@@ -1,7 +1,6 @@
 \name{genmulcmd}
 \alias{genmulcmd.vanilla}
 \alias{genmulcmd.bigmemory}
-\alias{genmulcmd.gputools}
 
 \title{Generate Multiplication Command} 
 
@@ -10,7 +9,6 @@
 \usage{ 
    genmulcmd.vanilla(a,b,c) 
    genmulcmd.bigmemory(a,b,c) 
-   genmulcmd.gputools(a,b,c) 
 } 
 
 \arguments{

@@ -1,11 +1,11 @@
-f65072c64dd3185ac30fcb1d4b3acfab *DESCRIPTION
-de254c2ca1dd5094f81c2164f4937bd6 *NAMESPACE
-c6380657c20f2ab914105255072d46e8 *R/callbackexs.R
-03ae58964dd18d40c6c9658f3a1fe990 *R/matpow.R
+6b523493f0f152f148ca9a4ad0d2ee46 *DESCRIPTION
+1425217ca1fa4c083b9e4435ce09694b *NAMESPACE
+8b116d6f3aa214e01daeafe4c47a0ba4 *R/callbackexs.R
+eb2263ab22430477dd0c5798867807ff *R/matpow.R
 fd269a5a3c4bf30481f14228acc439a8 *inst/BARUGmatpow.pdf
 747148bf20f144ac7383d3ef43feb717 *inst/README
 f9b9bb91a43eae7c897377d30799e668 *man/cgraph.Rd
 0d016bfdde038e0ba8f9f53e406e0ba9 *man/dup.Rd
-bf0b944dc51422585149bfbea7d98693 *man/genmulcmd.Rd
+c97e0a0f104feb4763a9065aaf9529b1 *man/genmulcmd.Rd
 4683c6f8442ee54779cd726d6da5c713 *man/matpow.Rd
 114031f0ba8122ada1ffab612f751836 *man/normvec.Rd

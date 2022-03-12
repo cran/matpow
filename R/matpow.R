@@ -86,10 +86,12 @@ matpow <- function(m,k=NULL,squaring=FALSE,
 }
 
 setdup <- function(ev) {
-   if (class(ev$m) == "matrix") {
+   # if (class(ev$m) == "matrix") {
+   if (inherits(ev$m,"matrix")) {
       ev$dup <- dup.vanilla 
       return()
-   } else if (class(ev$m) == "big.matrix")  {
+   # } else if (class(ev$m) == "big.matrix")  {
+   } else if (inherits(ev$m,"big.matrix"))  {
       ev$dup <- dup.bigmemory 
       return()
    }
@@ -97,10 +99,12 @@ setdup <- function(ev) {
 }
 
 setgenmulcmd <- function(ev) {
-   if (class(ev$m) == "matrix") {
+   # if (class(ev$m) == "matrix") {
+   if (inherits(ev$m,"matrix")) {
       ev$genmulcmd <- genmulcmd.vanilla 
       return()
-   } else if (class(ev$m) == "big.matrix")  {
+   # } else if (class(ev$m) == "big.matrix")  {
+   } else if (inherits(ev$m,"big.matrix"))  {
       ev$genmulcmd <- genmulcmd.bigmemory 
       return()
    }
@@ -110,7 +114,6 @@ setgenmulcmd <- function(ev) {
 dup.vanilla <- function(mat) mat
 
 dup.bigmemory <- function(mat) {
-   require(bigmemory)
    tmp <- bigmemory::big.matrix(nrow=nrow(mat), ncol=ncol(mat))
    tmp[,] <- mat[,]
 }
@@ -138,9 +141,9 @@ genmulcmd.bigmemory <- function(a,b,c) {
    paste(c,"[,] <- ",a,"[,] %*% ",b,"[,]")  
 }
 
-genmulcmd.gputools <- function(a,b,c) {
-   paste(c," <- gpuMatMult(",a,",",b,")")
-}
+# genmulcmd.gputools <- function(a,b,c) {
+#    paste(c," <- gpuMatMult(",a,",",b,")")
+# }
 
 # norm of vector x
 normvec <- function(x) sqrt(sum(x^2))

@@ -11,8 +11,6 @@
 #    mindist:  if TRUE, the matrix of min distances will be computed
 # return values (connected, dists) placed in ev
 
-# currently set up for ordinary R matrices or gputools
-
 # it is recommended that matpow() be called with squaring = TRUE
 
 cgraph <- function(ev,cbinit=FALSE,mindist=FALSE) {
@@ -49,8 +47,6 @@ cgraph <- function(ev,cbinit=FALSE,mindist=FALSE) {
 # return values placed in copy of ev; look at ev$x for the eigenvector,
 # ev$i for the number of iterations, and ev$stop to see if
 # convergence was reached
-
-# currently set up for ordinary R matrices or gputools
 
 eig <- function(ev,cbinit=FALSE,x=NULL,eps=1e-08) {
    if (cbinit) {
